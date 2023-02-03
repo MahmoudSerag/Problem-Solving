@@ -12,4 +12,4 @@ WHERE
     e.employee_id IS NULL OR s.employee_id IS NULL
 ORDER BY
     employee_id ASC;
-`
+`;

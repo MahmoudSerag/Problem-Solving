@@ -1,4 +1,4 @@
-const solution = string => {
+const solution = (string) => {
   let partOne, partTwo;
   for (let i = 0; i < string.length; i++) {
     if (string[i] === string[i].toUpperCase()) {
@@ -8,9 +8,8 @@ const solution = string => {
   }
   if (partOne && partTwo) {
     return `${partOne} ${partTwo}`;
-  }
-  else {
+  } else {
     return string;
   }
-}
+};
 console.log(solution('camelCasePart'));

@@ -1,9 +1,8 @@
-const toCamelCase = str => {
+const toCamelCase = (str) => {
   let newString;
   if (str.includes('-')) {
     newString = str.split('-');
-  }
-  else {
+  } else {
     newString = str.split('_');
   }
 
@@ -11,7 +10,7 @@ const toCamelCase = str => {
     newString[i] = newString[i][0].toUpperCase() + newString[i].substr(1);
   }
   return newString.join('');
-}
+};
 
 console.log(toCamelCase('the-stealth-warrior'));
 console.log(toCamelCase('The_Stealth_Warrior'));

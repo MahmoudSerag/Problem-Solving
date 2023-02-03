@@ -5,4 +5,4 @@ FROM
 LEFT JOIN
     address a
 ON
-    p.personId = a.personId;`
+    p.personId = a.personId;`;
